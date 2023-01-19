@@ -6,6 +6,7 @@ import Header from "./Header";
 import Container from "./Container";
 import { useState, useEffect } from 'react';
 
+
 const getInitialTasks = () => {
   const tasksFromLocalStorage = localStorage.getItem("tasks");
 

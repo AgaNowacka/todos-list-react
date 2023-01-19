@@ -1,15 +1,15 @@
-import "./style.css";
+import { Wrapper, Header, Title, Body } from "./styled.js"
 
 const Section = (props) => (
-    <section className="section">
-        <header className="section__header">
-          <h2 className="section_title">{props.title}</h2>
+    <Wrapper>
+        <Header>
+          <Title>{props.title}</Title>
          {props.extraHeaderContent}
-        </header>
-        <div className="section__body">
+        </Header>
+        <Body>
          {props.body}
-        </div>
-      </section>
+        </Body>
+      </Wrapper>
 );
 
 

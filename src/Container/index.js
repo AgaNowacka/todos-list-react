@@ -1,9 +1,9 @@
-import "./style.css"
+import { Wrapper } from "./styled.js"
 
 const Container = (props) => (
-    <main className="container">
+    <Wrapper>
         {props.children}
-    </main>
+    </Wrapper>
 
 );
 
