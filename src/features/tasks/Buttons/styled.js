@@ -9,12 +9,12 @@ export const Wrapper = styled.div`
 
 export const Button = styled.button`
     background: transparent;
-    color: teal;
+    color: ${({ theme }) => theme.color.primaryColor};
     border: none;
     margin: 0 0 0 20px;
     transition: color 0.3s;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
         margin: 10px;
     }
@@ -24,7 +24,7 @@ export const Button = styled.button`
     };
 
     &:disabled {
-        color: #ccc;
+        color: ${({ theme }) => theme.color.silver};
     };
 
 `;

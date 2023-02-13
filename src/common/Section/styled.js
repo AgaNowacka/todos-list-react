@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
     margin: 10px 0;
-    background-color: white;
-    box-shadow: 2px 2px 8px #ccc;
+    background-color: ${({ theme }) => theme.color.white};
+    box-shadow: 2px 2px 8px ${({ theme }) => theme.color.silver};
 `;
 
 export const Header = styled.header`
-    border-bottom: 1px solid rgb(236, 234, 234);
+    border-bottom: 1px solid ${({ theme }) => theme.color.gallery};
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
@@ -15,7 +15,7 @@ export const Header = styled.header`
     align-items: center;
     padding: 20px;
 
-    @media(max-width: 767px) {
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 

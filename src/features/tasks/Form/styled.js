@@ -5,7 +5,7 @@ export const StyledForm = styled.form`
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
        grid-template-columns: 1fr;
     }
     
@@ -13,14 +13,15 @@ export const StyledForm = styled.form`
 
 export const Input = styled.input`
     padding: 10px;
-    border: 1px solid rgb(236, 234, 234);
+    border: 1px solid ${({ theme }) => theme.color.gallery};
 `;
 
 export const Button = styled.button`
-    background-color: hsl(180, 100%, 25%);
-    color: white;
+    background-color: ${({ theme }) => theme.color.primaryColor};
+    color: ${({ theme }) => theme.color.white};
     padding: 10px;
-    box-shadow: 2px 2px 8px #ccc;
+    box-shadow: 2px 2px 8px ${({ theme }) => theme.color.silver};
+    
     border: none;
     transition: 0.3s;
 
