@@ -14,7 +14,6 @@ export const GlobalStyle = createGlobalStyle`
     
     body {
         font-family: 'Montserrat', sans-serif;
-        word-break: break-word;
         background-color: ${({ theme }) => theme.color.gallery};
     }
 `;
