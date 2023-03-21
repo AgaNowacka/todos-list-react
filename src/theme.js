@@ -6,6 +6,7 @@ export const theme = {
         gallery: "#ECEAEA",
         forestGreen: "#228C22",
         mexicanRed: "#b42222",
+        tiber: "#084039", 
 
     },
 
