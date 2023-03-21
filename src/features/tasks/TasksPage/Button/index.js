@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
 
-export const Wrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-
-`;
-
 export const Button = styled.button`
     background: transparent;
     color: ${({ theme }) => theme.color.primaryColor};
@@ -22,6 +16,10 @@ export const Button = styled.button`
     &:hover {
         filter: brightness(110%);
     };
+
+    &:active {
+        filter: brightness(120%);
+    }
 
     &:disabled {
         color: ${({ theme }) => theme.color.silver};
