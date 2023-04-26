@@ -3,6 +3,9 @@
 This simple TO-DO-LIST app will help you organize your daily tasks.
 Download example tasks, add new tasks, read about task details, mark task as finished, finish all task by one button. All tasks are saved into browser's local storage.
 
+# DEMO
+
+https://aganowacka.github.io/todos-list-react/
 
 # Technologies 
 
