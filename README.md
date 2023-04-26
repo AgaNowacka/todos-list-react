@@ -1,6 +1,19 @@
-# Task list
+# Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This simple TO-DO-LIST app will help you organize your daily tasks.
+Download example tasks, add new tasks, read about task details, mark task as finished, finish all task by one button. All tasks are saved into browser's local storage.
+
+
+# Technologies 
+
+- ES12+ features
+- Responsive Web Design
+- React-Dom, React-Redux, Redux-Toolkit, Redux-Saga
+- Styled Components (ThemeProvider)
+- Hooks: useState, useEffect, useRef, useSelector, useDispatch, useLocation, useHistory
+- Custom Hooks
+- LocalStorage
+
 
 ## Available Scripts
 
